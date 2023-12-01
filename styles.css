@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(130deg, #232323, #ffffff);
+}
+
+#userInfoContainer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* korkeuden säätö */
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  margin-right: 5px;
+}
+
+input {
+  width: 50px;
+  text-align: center;
+}
+
+button {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Muokkaa jokaisen käyttäjän nimi eriväriseksi */
+li:nth-child(5n + 1) {
+  background-color: #8d8d8d;
+}
+
+/* Responsiivisuus */
+@media screen and (max-width: 600px) {
+  li {
+    font-size: 14px;
+  }
+}
